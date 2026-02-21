@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "strix"
 version = "0.1.0"
 description = "CLI tool that scans repos and spins up environments using AI-generated configs."
-authors = ["Your Name <you@example.com>"]
-license = {text = "MIT"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+license = "MIT"
 dependencies = [
     "typer",
     "rich",
@@ -16,3 +16,9 @@ dependencies = [
     "requests",
     "openai"
 ]
+
+[project.scripts]
+strix = "cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["cli*", "backend*"]
