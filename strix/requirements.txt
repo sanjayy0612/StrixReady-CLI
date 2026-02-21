@@ -1,0 +1,6 @@
+typer
+rich
+fastapi
+uvicorn
+requests
+openai

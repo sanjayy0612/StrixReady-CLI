@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strix"
+version = "0.1.0"
+description = "CLI tool that scans repos and spins up environments using AI-generated configs."
+authors = ["Your Name <you@example.com>"]
+license = {text = "MIT"}
+dependencies = [
+    "typer",
+    "rich",
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "openai"
+]

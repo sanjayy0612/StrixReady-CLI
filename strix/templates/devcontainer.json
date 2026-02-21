@@ -1,0 +1,7 @@
+{
+  "name": "Strix Ready Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/python:latest",
+  "features": {
+    "docker-in-docker": "latest"
+  }
+}
